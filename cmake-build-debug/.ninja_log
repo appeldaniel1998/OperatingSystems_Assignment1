@@ -1,0 +1,6 @@
+# ninja log v5
+26	56	1668450123721003000	OperatingSystems_Assignment1	78bfdf63dc6824fa
+0	57	1668449095726903124	CMakeFiles/OperatingSystems_Assignment1.dir/codec1.c.o	d9ce9c089fdc3f26
+1	36	1668452415509347065	build.ninja	6bccf368e1d3c605
+0	24	1668450123685002716	CMakeFiles/OperatingSystems_Assignment1.dir/codec2.c.o	c15fa6f24146dd21
+1	395	1668433780540275982	CMakeFiles/OperatingSystems_Assignment1.dir/copy.c.o	89c33ca9b904b221
