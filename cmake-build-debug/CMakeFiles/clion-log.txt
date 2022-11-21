@@ -1,4 +1,4 @@
-/snap/clion/209/bin/cmake/linux/bin/cmake -DCMAKE_BUILD_TYPE=Debug -DCMAKE_MAKE_PROGRAM=/snap/clion/209/bin/ninja/linux/ninja -DCMAKE_CXX_COMPILER=/usr/bin/clang++-9 -G Ninja -S /home/appeldaniel/CLionProjects/OperatingSystems_Assignment1 -B /home/appeldaniel/CLionProjects/OperatingSystems_Assignment1/cmake-build-debug
+/snap/clion/209/bin/cmake/linux/bin/cmake -DCMAKE_BUILD_TYPE=Debug -DCMAKE_MAKE_PROGRAM=/snap/clion/209/bin/ninja/linux/ninja -DCMAKE_CXX_COMPILER=/usr/bin/clang++-9 -G Ninja -S /home/appeldaniel/CLionProjects/OperatingSystems_Assignment1-1 -B /home/appeldaniel/CLionProjects/OperatingSystems_Assignment1-1/cmake-build-debug
 -- Configuring done
 -- Generating done
--- Build files have been written to: /home/appeldaniel/CLionProjects/OperatingSystems_Assignment1/cmake-build-debug
+-- Build files have been written to: /home/appeldaniel/CLionProjects/OperatingSystems_Assignment1-1/cmake-build-debug

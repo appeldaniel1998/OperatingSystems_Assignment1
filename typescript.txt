@@ -1,0 +1,31 @@
+Script started on 2022-11-17 13:12:02-08:00 [TERM="xterm-256color" TTY="/dev/pts/1" COLUMNS="116" LINES="40"]
+]0;appeldaniel@ubuntu: ~/CLionProjects/OperatingSystems_Assignment1-1[01;32mappeldaniel@ubuntu[00m:[01;34m~/CLionProjects/OperatingSystems_Assignment1-1[00m$ make all
+gcc -Wall -g -c codec2.c -ldl
+gcc -shared -o codec2.so codec2.o -ldl
+gcc -Wall -g -c codec1.c -ldl
+gcc -shared -o codec1.so codec1.o -ldl
+gcc -Wall -g -c encode.c -ldl
+gcc -Wall -g -o encode encode.o ./codec1.so ./codec2.so -lm -ldl
+gcc -Wall -g -c decode.c -ldl
+gcc -Wall -g -o decode decode.o ./codec1.so ./codec2.so -lm -ldl
+gcc -Wall -g -c copy.c
+gcc -Wall -g -o copy copy.o
+gcc -Wall -g -c cmp.c
+gcc -Wall -g -o cmp cmp.o
+]0;appeldaniel@ubuntu: ~/CLionProjects/OperatingSystems_Assignment1-1[01;32mappeldaniel@ubuntu[00m:[01;34m~/CLionProjects/OperatingSystems_Assignment1-1[00m$ ./cmp File1.txt File2.txt
+Identical
+]0;appeldaniel@ubuntu: ~/CLionProjects/OperatingSystems_Assignment1-1[01;32mappeldaniel@ubuntu[00m:[01;34m~/CLionProjects/OperatingSystems_Assignment1-1[00m$ ./cmp File1.txt File3.txt
+Not identical
+]0;appeldaniel@ubuntu: ~/CLionProjects/OperatingSystems_Assignment1-1[01;32mappeldaniel@ubuntu[00m:[01;34m~/CLionProjects/OperatingSystems_Assignment1-1[00m$ ./copy File1.txt File2.txt
+]0;appeldaniel@ubuntu: ~/CLionProjects/OperatingSystems_Assignment1-1[01;32mappeldaniel@ubuntu[00m:[01;34m~/CLionProjects/OperatingSystems_Assignment1-1[00m$ ./encode codec1 LALAlala223344
+lalaLALA223344
+]0;appeldaniel@ubuntu: ~/CLionProjects/OperatingSystems_Assignment1-1[01;32mappeldaniel@ubuntu[00m:[01;34m~/CLionProjects/OperatingSystems_Assignment1-1[00m$ ./encode codec2 LALAlala223344
+´¿´¿”Ÿ”ŸÎÎÍÍÌÌ
+]0;appeldaniel@ubuntu: ~/CLionProjects/OperatingSystems_Assignment1-1[01;32mappeldaniel@ubuntu[00m:[01;34m~/CLionProjects/OperatingSystems_Assignment1-1[00m$ ./decode codec1 LALAlala223344
+lalaLALA223344
+]0;appeldaniel@ubuntu: ~/CLionProjects/OperatingSystems_Assignment1-1[01;32mappeldaniel@ubuntu[00m:[01;34m~/CLionProjects/OperatingSystems_Assignment1-1[00m$ ./decode codec1 LALAlala223344[C[1P LALAlala2233442 LALAlala223344
+´¿´¿”Ÿ”ŸÎÎÍÍÌÌ
+]0;appeldaniel@ubuntu: ~/CLionProjects/OperatingSystems_Assignment1-1[01;32mappeldaniel@ubuntu[00m:[01;34m~/CLionProjects/OperatingSystems_Assignment1-1[00m$ exit
+exit
+
+Script done on 2022-11-17 13:13:22-08:00 [COMMAND_EXIT_CODE="0"]

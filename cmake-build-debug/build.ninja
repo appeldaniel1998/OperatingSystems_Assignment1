@@ -39,7 +39,7 @@ include CMakeFiles/rules.ninja
 #############################################
 # Logical path to working directory; prefix for absolute paths.
 
-cmake_ninja_workdir = /home/appeldaniel/CLionProjects/OperatingSystems_Assignment1/cmake-build-debug/
+cmake_ninja_workdir = /home/appeldaniel/CLionProjects/OperatingSystems_Assignment1-1/cmake-build-debug/
 # =============================================================================
 # Object build statements for EXECUTABLE target OperatingSystems_Assignment1
 
@@ -49,26 +49,8 @@ cmake_ninja_workdir = /home/appeldaniel/CLionProjects/OperatingSystems_Assignmen
 
 build cmake_object_order_depends_target_OperatingSystems_Assignment1: phony || CMakeFiles/OperatingSystems_Assignment1.dir
 
-build CMakeFiles/OperatingSystems_Assignment1.dir/codec2.c.o: C_COMPILER__OperatingSystems_Assignment1_Debug /home/appeldaniel/CLionProjects/OperatingSystems_Assignment1/codec2.c || cmake_object_order_depends_target_OperatingSystems_Assignment1
-  DEP_FILE = CMakeFiles/OperatingSystems_Assignment1.dir/codec2.c.o.d
-  FLAGS = -g
-  OBJECT_DIR = CMakeFiles/OperatingSystems_Assignment1.dir
-  OBJECT_FILE_DIR = CMakeFiles/OperatingSystems_Assignment1.dir
-
-build CMakeFiles/OperatingSystems_Assignment1.dir/foo.c.o: C_COMPILER__OperatingSystems_Assignment1_Debug /home/appeldaniel/CLionProjects/OperatingSystems_Assignment1/foo.c || cmake_object_order_depends_target_OperatingSystems_Assignment1
-  DEP_FILE = CMakeFiles/OperatingSystems_Assignment1.dir/foo.c.o.d
-  FLAGS = -g
-  OBJECT_DIR = CMakeFiles/OperatingSystems_Assignment1.dir
-  OBJECT_FILE_DIR = CMakeFiles/OperatingSystems_Assignment1.dir
-
-build CMakeFiles/OperatingSystems_Assignment1.dir/encode.c.o: C_COMPILER__OperatingSystems_Assignment1_Debug /home/appeldaniel/CLionProjects/OperatingSystems_Assignment1/encode.c || cmake_object_order_depends_target_OperatingSystems_Assignment1
+build CMakeFiles/OperatingSystems_Assignment1.dir/encode.c.o: C_COMPILER__OperatingSystems_Assignment1_Debug /home/appeldaniel/CLionProjects/OperatingSystems_Assignment1-1/encode.c || cmake_object_order_depends_target_OperatingSystems_Assignment1
   DEP_FILE = CMakeFiles/OperatingSystems_Assignment1.dir/encode.c.o.d
-  FLAGS = -g
-  OBJECT_DIR = CMakeFiles/OperatingSystems_Assignment1.dir
-  OBJECT_FILE_DIR = CMakeFiles/OperatingSystems_Assignment1.dir
-
-build CMakeFiles/OperatingSystems_Assignment1.dir/decode.c.o: C_COMPILER__OperatingSystems_Assignment1_Debug /home/appeldaniel/CLionProjects/OperatingSystems_Assignment1/decode.c || cmake_object_order_depends_target_OperatingSystems_Assignment1
-  DEP_FILE = CMakeFiles/OperatingSystems_Assignment1.dir/decode.c.o.d
   FLAGS = -g
   OBJECT_DIR = CMakeFiles/OperatingSystems_Assignment1.dir
   OBJECT_FILE_DIR = CMakeFiles/OperatingSystems_Assignment1.dir
@@ -81,8 +63,9 @@ build CMakeFiles/OperatingSystems_Assignment1.dir/decode.c.o: C_COMPILER__Operat
 #############################################
 # Link the executable OperatingSystems_Assignment1
 
-build OperatingSystems_Assignment1: C_EXECUTABLE_LINKER__OperatingSystems_Assignment1_Debug CMakeFiles/OperatingSystems_Assignment1.dir/codec2.c.o CMakeFiles/OperatingSystems_Assignment1.dir/foo.c.o CMakeFiles/OperatingSystems_Assignment1.dir/encode.c.o CMakeFiles/OperatingSystems_Assignment1.dir/decode.c.o
+build OperatingSystems_Assignment1: C_EXECUTABLE_LINKER__OperatingSystems_Assignment1_Debug CMakeFiles/OperatingSystems_Assignment1.dir/encode.c.o
   FLAGS = -g
+  LINK_LIBRARIES = -ldl
   OBJECT_DIR = CMakeFiles/OperatingSystems_Assignment1.dir
   POST_BUILD = :
   PRE_LINK = :
@@ -94,7 +77,7 @@ build OperatingSystems_Assignment1: C_EXECUTABLE_LINKER__OperatingSystems_Assign
 # Utility command for edit_cache
 
 build CMakeFiles/edit_cache.util: CUSTOM_COMMAND
-  COMMAND = cd /home/appeldaniel/CLionProjects/OperatingSystems_Assignment1/cmake-build-debug && /snap/clion/209/bin/cmake/linux/bin/ccmake -S/home/appeldaniel/CLionProjects/OperatingSystems_Assignment1 -B/home/appeldaniel/CLionProjects/OperatingSystems_Assignment1/cmake-build-debug
+  COMMAND = cd /home/appeldaniel/CLionProjects/OperatingSystems_Assignment1-1/cmake-build-debug && /snap/clion/209/bin/cmake/linux/bin/ccmake -S/home/appeldaniel/CLionProjects/OperatingSystems_Assignment1-1 -B/home/appeldaniel/CLionProjects/OperatingSystems_Assignment1-1/cmake-build-debug
   DESC = Running CMake cache editor...
   pool = console
   restat = 1
@@ -106,7 +89,7 @@ build edit_cache: phony CMakeFiles/edit_cache.util
 # Utility command for rebuild_cache
 
 build CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
-  COMMAND = cd /home/appeldaniel/CLionProjects/OperatingSystems_Assignment1/cmake-build-debug && /snap/clion/209/bin/cmake/linux/bin/cmake --regenerate-during-build -S/home/appeldaniel/CLionProjects/OperatingSystems_Assignment1 -B/home/appeldaniel/CLionProjects/OperatingSystems_Assignment1/cmake-build-debug
+  COMMAND = cd /home/appeldaniel/CLionProjects/OperatingSystems_Assignment1-1/cmake-build-debug && /snap/clion/209/bin/cmake/linux/bin/cmake --regenerate-during-build -S/home/appeldaniel/CLionProjects/OperatingSystems_Assignment1-1 -B/home/appeldaniel/CLionProjects/OperatingSystems_Assignment1-1/cmake-build-debug
   DESC = Running CMake to regenerate build system...
   pool = console
   restat = 1
@@ -122,7 +105,7 @@ build rebuild_cache: phony CMakeFiles/rebuild_cache.util
 # =============================================================================
 
 #############################################
-# Folder: /home/appeldaniel/CLionProjects/OperatingSystems_Assignment1/cmake-build-debug
+# Folder: /home/appeldaniel/CLionProjects/OperatingSystems_Assignment1-1/cmake-build-debug
 
 build all: phony OperatingSystems_Assignment1
 

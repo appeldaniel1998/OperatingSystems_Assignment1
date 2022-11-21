@@ -6,6 +6,7 @@
 CC = gcc
 FLAGS = -Wall -g
 AR= ar
+LDFLAGS = -ldl
 
 
 # Make all must make all binaries.
@@ -13,7 +14,7 @@ AR= ar
 
 
 #make all
-all:Code2 Code1 encode decode copy cmp
+all:Codec2 Codec1 encode decode copy cmp
 
 
 cmp: cmp.o
@@ -37,30 +38,30 @@ copy.o: copy.c
 
 # make encode dynamic
 encode: encode.o codec2.so codec1.so
-		$(CC) $(FLAGS) -o encode encode.o ./codec1.so ./codec2.so -lm
+		$(CC) $(FLAGS) -o encode encode.o ./codec1.so ./codec2.so -lm $(LDFLAGS)
 
 # make decode dynamic
 decode: decode.o codec2.so codec1.so
-		$(CC) $(FLAGS) -o decode decode.o ./codec1.so ./codec2.so -lm
+		$(CC) $(FLAGS) -o decode decode.o ./codec1.so ./codec2.so -lm $(LDFLAGS)
 
 # dynamic library
-Code2: codec2.o
-	$(CC) -shared -o codec2.so codec2.o
+Codec2: codec2.o
+	$(CC) -shared -o codec2.so codec2.o $(LDFLAGS)
 # dynamic library
-Code1: codec1.o
-	$(CC) -shared -o codec1.so codec1.o
+Codec1: codec1.o
+	$(CC) -shared -o codec1.so codec1.o $(LDFLAGS)
 
 codec2.o: codec2.c codec.h
-	$(CC) $(FLAGS) -c codec2.c
+	$(CC) $(FLAGS) -c codec2.c $(LDFLAGS)
 
 codec1.o: codec1.c codec.h
-	$(CC) $(FLAGS) -c codec1.c
+	$(CC) $(FLAGS) -c codec1.c $(LDFLAGS)
 
 encode.o: encode.c codec.h
-	$(CC) $(FLAGS) -c encode.c
+	$(CC) $(FLAGS) -c encode.c $(LDFLAGS)
 
 decode.o: decode.c codec.h
-	$(CC) $(FLAGS) -c decode.c
+	$(CC) $(FLAGS) -c decode.c $(LDFLAGS)
 
 #make clean
 .PHONY: clean all
